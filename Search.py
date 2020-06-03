@@ -43,7 +43,7 @@ class Search:
 userr = input('Digite seu user: ')
 passw = input('Digite seu passoword: ')
 filme_name = input('Digite o nome do filme: ')
-browser = Chrome(executable_path='./chromedriver')
+browser = Chrome(executable_path='./driver/chromedriver')
 
 start = Search(filme_name, userr, passw, browser)
 start.chamar()
