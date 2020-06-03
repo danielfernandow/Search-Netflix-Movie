@@ -1,4 +1,4 @@
-from selenium.webdriver import Firefox
+from selenium.webdriver import Chrome
 import time
 
 
@@ -39,10 +39,11 @@ class Search:
         play_video.click()
 
 
-browser = Firefox()
-userr = input('Digite seu user: ' )
+
+userr = input('Digite seu user: ')
 passw = input('Digite seu passoword: ')
 filme_name = input('Digite o nome do filme: ')
+browser = Chrome(executable_path='./chromedriver')
 
 start = Search(filme_name, userr, passw, browser)
 start.chamar()
